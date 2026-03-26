@@ -73,7 +73,7 @@ export default function Footer() {
     >
       <MdEmail className="text-red-500 text-lg shrink-0" />
       <span className="break-all">
-        waveswebstudio99@email.com
+        waveswebstudio99@gmail.com
       </span>
     </a>
   </li>

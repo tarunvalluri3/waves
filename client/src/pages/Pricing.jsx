@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
-import { FiClock } from "react-icons/fi";
+
 
 export default function Pricing() {
   const rootRef = useRef(null);
@@ -209,7 +209,7 @@ export default function Pricing() {
             <div className="text-sm text-black/60 space-y-2">
   <p className="flex items-center gap-2">
     <MdEmail className="text-red-500" />
-    waveswebstudio99@email.com
+    waveswebstudio99@gmail.com
   </p>
 
   <p className="flex items-center gap-2">
@@ -222,10 +222,6 @@ export default function Pricing() {
     Hyderabad, India
   </p>
 
-  <p className="flex items-center gap-2">
-    <FiClock className="text-blue-900" />
-    Response: Within 12 hours
-  </p>
 </div>
           </div>
 

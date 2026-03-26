@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* ✅ CRITICAL FIX */
+html, body {
+  overflow-x: hidden;
+} 
+
+html {
+  scroll-behavior: smooth;
+} 
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.6;
+  
+} 
+
+::selection {
+  background: #000;
+  color: #fff;
+} 
+
+.logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}

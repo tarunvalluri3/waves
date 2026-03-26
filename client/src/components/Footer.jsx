@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { FiGithub, FiTwitter, FiLinkedin, FiMail } from "react-icons/fi";
+import { MdEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -57,14 +60,52 @@ export default function Footer() {
           </div>
 
           {/* CONTACT */}
-          <div>
-            <h3 className="text-sm font-medium mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm text-white/60">
-              <li>Email: your@email.com</li>
-              <li>Phone: +91 XXXXX XXXXX</li>
-              <li>Location: India</li>
-            </ul>
-          </div>
+           <div>
+      <h3 className="text-sm font-semibold mb-4 text-white">Contact</h3>
+
+      <ul className="space-y-4 text-sm text-white/70">
+        
+  {/* Email */}
+  <li>
+    <a
+      href="mailto:waveswebstudio99@email.com"
+      className="flex items-center gap-3 hover:text-white transition"
+    >
+      <MdEmail className="text-red-500 text-lg shrink-0" />
+      <span className="break-all">
+        waveswebstudio99@email.com
+      </span>
+    </a>
+  </li>
+
+  {/* WhatsApp */}
+  <li>
+    <a
+      href="https://wa.me/916303896249"
+      target="_blank"
+      rel="noreferrer"
+      className="flex items-center gap-3 hover:text-white transition"
+    >
+      <FaWhatsapp className="text-green-500 text-lg shrink-0" />
+      <span>+91 6303896249</span>
+    </a>
+  </li>
+
+  {/* Location */}
+  <li>
+    <a
+      href="https://maps.google.com/?q=Hyderabad"
+      target="_blank"
+      rel="noreferrer"
+      className="flex items-center gap-3 hover:text-white transition"
+    >
+      <IoLocationSharp className="text-white text-lg shrink-0" />
+      <span>Hyderabad, India</span>
+    </a>
+  </li>
+
+</ul>
+    </div>
         </div>
 
         {/* DIVIDER */}

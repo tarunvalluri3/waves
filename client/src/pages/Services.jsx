@@ -447,53 +447,55 @@ bg-gradient-to-br from-[#48cae4] via-[#5ed3ec] to-[#caf0f8]"
 
           {/* OPTIONS */}
           <div className="grid md:grid-cols-2 gap-6">
-            {/* PRICING */}
-            <div
-              className="group p-8 rounded-2xl border border-black/10 bg-white 
-      transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
-            >
-              <h3 className="text-xl font-semibold mb-3">Explore Pricing</h3>
+      
+      {/* PRICING */}
+      <div
+        className="group p-8 rounded-2xl border border-black/10 bg-white 
+        transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+      >
+        <h3 className="text-xl font-semibold mb-3">Explore Pricing</h3>
 
-              <p className="text-black/70 mb-6 text-sm">
-                View our pricing structure and understand how we approach
-                project costs.
-              </p>
+        <p className="text-black/70 mb-6 text-sm">
+          View our pricing structure and understand how we approach
+          project costs.
+        </p>
 
-              <a
-                href="/pricing"
-                className="inline-flex items-center justify-center bg-black text-white px-6 h-11 rounded-lg 
+        <button
+          onClick={() => navigate("/pricing")}
+          className="inline-flex items-center justify-center bg-black text-white px-6 h-11 rounded-lg 
           transition hover:scale-[1.03]"
-              >
-                View Pricing →
-              </a>
-            </div>
+        >
+          View Pricing →
+        </button>
+      </div>
 
-            {/* CONTACT */}
-            <div
-              className="group p-8 rounded-2xl border border-black/10 
-  bg-gradient-to-br from-white via-[#48cae4]/10 to-[#48cae4]/20
-  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
-            >
-              <h3 className="text-xl font-semibold mb-3 text-black">
-                Contact Us
-              </h3>
+      {/* CONTACT */}
+      <div
+        className="group p-8 rounded-2xl border border-black/10 
+        bg-gradient-to-br from-white via-[#48cae4]/10 to-[#48cae4]/20
+        transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+      >
+        <h3 className="text-xl font-semibold mb-3 text-black">
+          Contact Us
+        </h3>
 
-              <p className="text-black/70 mb-6 text-sm">
-                Tell us about your project and we’ll help you plan the right
-                solution.
-              </p>
+        <p className="text-black/70 mb-6 text-sm">
+          Tell us about your project and we’ll help you plan the right
+          solution.
+        </p>
 
-              <a
-                href="/pricing"
-                className="inline-flex items-center justify-center 
-    bg-black text-white px-6 h-11 rounded-lg 
-    transition-all duration-300 
-    hover:scale-[1.03] hover:shadow-md"
-              >
-                Get in Touch →
-              </a>
-            </div>
-          </div>
+        <button
+          onClick={() => navigate("/pricing")}
+          className="inline-flex items-center justify-center 
+          bg-black text-white px-6 h-11 rounded-lg 
+          transition-all duration-300 
+          hover:scale-[1.03] hover:shadow-md"
+        >
+          Get in Touch →
+        </button>
+      </div>
+
+    </div>
         </div>
       </section>
     </div>
